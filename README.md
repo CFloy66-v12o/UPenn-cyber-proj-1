@@ -37,14 +37,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 _
-|         Name         |                  Function                 |   IP Address  |     Operating System    |   |
-|:--------------------:|:-----------------------------------------:|:-------------:|:-----------------------:|---|
-| Jump Box Provisioner | Gateway                                   | 10.0.0.4      | Linux Ubuntu 18.04-LTS  |   |
-| Local Workstation    | Configurating network externally          | 98.233.82.210 | Windows 10 Pro Edition  |   |
-| Web-1 VM             | Process and deliver web content to user   | 10.0.0.5      | Linux Ubuntu 18.04-LTS  |   |
-| Web-2 VM             | Process and deliver web content to user   | 10.0.0.7      | Linux Ubuntu 18.04-LTS  |   |
-| ELK-Server           | Collect and process data from Web VMs     | 10.2.0.4      | Linux Ubuntu 18.04-LTS  |   |
-| Load Balancer        | Distribute Traffic to backend server pool | 20.119.114.243| N/A                     |   |
+|         Name         |                  Function                 |   IP Address  |     Operating System    
+|:--------------------:|:-----------------------------------------:|:-------------:|:-----------------------:|
+| Jump Box Provisioner | Gateway                                   | 10.0.0.4      | Linux Ubuntu 18.04-LTS  |   
+| Local Workstation    | Configurating network externally          | 98.233.82.210 | Windows 10 Pro Edition  |   
+| Web-1 VM             | Process and deliver web content to user   | 10.0.0.5      | Linux Ubuntu 18.04-LTS  |   
+| Web-2 VM             | Process and deliver web content to user   | 10.0.0.7      | Linux Ubuntu 18.04-LTS  |   
+| ELK-Server           | Collect and process data from Web VMs     | 10.2.0.4      | Linux Ubuntu 18.04-LTS  |   
+| Load Balancer        | Distribute Traffic to backend server pool | 20.119.114.243| N/A                     |   
 
 ### Access Policies
 

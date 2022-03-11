@@ -28,7 +28,7 @@
         state: present
         reload: yes
 
-    - name: download and lauch a docker elk container
+    - name: download and launch a docker elk container
       docker_container:
         name: elk
         image: sebp/elk:761
