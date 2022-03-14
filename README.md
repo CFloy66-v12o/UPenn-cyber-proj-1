@@ -51,11 +51,13 @@ Machines within the network can only be accessed by jump box provisioner.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | No                  | 98.233.82.210        |
-|          |                     |                      |
-|          |                     |                      |
+|      Name     	| Publicly Accessible 	|                       Allowed IP Addresses                      	|
+|:-------------:	|:-------------------:	|:---------------------------------------------------------------:	|
+| Jump Box      	| Yes                 	| Local Workstation with IP 98.233.82.210 via SSH port 22         	|
+| Web-1 VM      	| No                  	| 10.0.0.5 via SSH port 22                                        	|
+| Web-2 VM      	| No                  	| 10.0.0.7 via SSH port 22                                        	|
+| ELK Server    	| Only on Port 5601   	| Local Workstation with IP 98.233.82.210 via port 5601, 10.0.0.5, 10.0.0.7 	|
+| Load Balancer 	| Yes                 	| Local Workstation with IP 98.233.82.210 via HTTP port 80        	|
 
 ### Elk Configuration
 
@@ -63,7 +65,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 - The first benefit of all of this is saving time. Before automation, system administrators had to spend hours configuring machines
   manually, after Ansible, the time required to configure the whole process is less than 3 minutes! The second benefit is reducing
-  bugs and errors related to human error.Automated provisioning with Ansible also provides for homogeneity, or IaC (Infrastructure as Code),
+  bugs and errors,which generally go hand 'n' hand when humans interact with computers. Automated provisioning with Ansible also provides for homogeneity, or IaC (Infrastructure as Code),
   allowing you to write scripts in one location and have it filter to the appropriate locations. This ensures all locations are running the 
   same scripts and are identical. 
 
@@ -117,6 +119,9 @@ SSH into the control node and follow the steps below:
   with the ELK server.
 
 - Which URL do you navigate to in order to check that the ELK server is running? http://[public IP address of ELK Server]:5601/app/kibana
+
+## Interview Questions
+- [interview-questions.txt](https://docs.google.com/document/d/1Bw-42tYTR9CUNvehy0klxZTPD2rMRu-QcqG7vrq5f2I/edit?usp=sharing)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
