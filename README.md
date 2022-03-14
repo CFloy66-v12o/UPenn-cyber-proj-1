@@ -70,9 +70,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
   same scripts and are identical. 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+- sudo apt update (ensure system is updated)
+- sudo apt install -y docker.io (bring in docker)
+- sudo systemctl status docker (verify docker is running)
+- sudo docker pull cyberxsecurity/ansible:latest (download container)
+- sudo docker container list -a (list all installed docker containers)
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
