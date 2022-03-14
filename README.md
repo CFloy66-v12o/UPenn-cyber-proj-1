@@ -22,7 +22,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 - Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - The primary function of a load balancer is to spread workloads across multiple servers to prevent overloading servers, optimize productivity, and maximize uptime. Load balancers also add resiliency by rerouting live traffic from one server to another if a server falls prey to DDoS attacks or otherwise becomes unavailable. In this way, load balancers help to eliminate single points of failure, reduce the attack surface, and make it harder to exhaust resources and saturate links.
--  What is the advantage of a jump box? A jumpbox, when configured correctly, creates a single point of entry into your network. When ssh key is used to establish connection between host and jumpbox, and private ip's are used for other vm's on network and all connections are then forced through jumpbox, the attack surface is greatly reduced.
+-  What is the advantage of a jump box? A jumpbox, when configured correctly, creates a single point of entry into your network. When an ssh key(s) is/are used to establish connections between hosts and the jumpbox, and when private ip's are used for other vm's on network, and when all connections are subsequently forced through the jumpbox, the attack surface is significantly reduced.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat will collect log events and gather data about the file system.
