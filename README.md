@@ -71,11 +71,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- sudo apt update (ensure system is updated)
-- sudo apt install -y docker.io (bring in docker)
-- sudo systemctl status docker (verify docker is running)
-- sudo docker pull cyberxsecurity/ansible:latest (download container)
-- sudo docker container list -a (list all installed docker containers)
+- 'sudo apt update' (ensure system is updated)
+- 'sudo apt install -y docker.io' (bring in docker)
+- 'sudo systemctl status docker' (verify docker is running)
+- 'sudo docker pull cyberxsecurity/ansible:latest' (download container)
+- 'sudo docker container list -a' (list all installed docker containers)
 
 The following screenshot displays the result of running `sudo docker ps` after successfully configuring the ELK instance.
 
@@ -130,12 +130,12 @@ SSH into the control node and follow the steps below:
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-- ssh azureuser[or chosen name]@jump-box-ip-address
-- sudo docker pull [name of container] to download container
-- sudo docker run -ti [name of container] bash
-- sudo docker start   [name of container] to start the container
-- sudo docker attach  [to connect to the Ansible container]
+- 'ssh azureuser[or chosen name]@jump-box-ip-address'
+- 'sudo docker pull [name of container]' {to download container}
+- 'sudo docker run -ti [name of container] bash'
+- 'sudo docker start [name of container]' {to start the container}
+- 'sudo docker attach [name of container]'  {to connect to the Ansible container}
 - Navigate to the /etc/ansible directory
-- nano hosts to configure the IP addresses within the "webserver" and "elk" groups
-- nano ansible.cfg to specify the remote user.
-- ansible-playbook [name of playbook]
+- 'nano hosts' {to configure the IP addresses within the "webserver" and "elk" groups}
+- 'nano ansible.cfg' {to specify the remote user}
+- 'ansible-playbook [name of playbook]'
