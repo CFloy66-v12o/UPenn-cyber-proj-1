@@ -71,11 +71,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- 'sudo apt update' (ensure system is updated)
-- 'sudo apt install -y docker.io' (bring in docker)
-- 'sudo systemctl status docker' (verify docker is running)
-- 'sudo docker pull cyberxsecurity/ansible:latest' (download container)
-- 'sudo docker container list -a' (list all installed docker containers)
+- `sudo apt update` (ensure system is updated)
+- `sudo apt install -y docker.io` (bring in docker)
+- `sudo systemctl status docker` (verify docker is running)
+- `sudo docker pull cyberxsecurity/ansible:latest` (download container)
+- `sudo docker container list -a` (list all installed docker containers)
 
 The following screenshot displays the result of running `sudo docker ps` after successfully configuring the ELK instance.
 
