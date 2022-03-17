@@ -77,7 +77,7 @@ The playbook implements the following tasks:
 - sudo docker pull cyberxsecurity/ansible:latest (download container)
 - sudo docker container list -a (list all installed docker containers)
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `sudo docker ps` after successfully configuring the ELK instance.
 
 ![Output of $sudo docker ps](images/sudo-docker-ps.png)
 
